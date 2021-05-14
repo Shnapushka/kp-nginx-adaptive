@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>3 лаба</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="description" content="Test site" />
+	<meta name="keywords" content="test site(слово)" />
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="/assets/style.css" type="text/css"/>
+</head>
+<body bgcolor="#95bddc">
+
+	<div class='ad-menu'>
+	<nav class='nav' tabindex='1'>
+	<ul>
+	<li><a href='#'>Главная</a></li>
+	<li><a href='#'>О компании</a></li>
+	<li><a href='#'>Блог</a></li>
+	<li><a href='#'>Галерея</a></li>
+	</ul>
+	</nav>
+	</div>
+
+	<div class="three"><h1>АУБП-18 УГГУ</h1></div>
+
+
+	<style>
+	   textarea {
+	    width: 330px; /* Ширина поля в процентах */
+	    height: 300px; /* Высота поля в пикселах */
+	    resize: none; /* Запрещаем изменять размер */
+			background: #EEE8AA;
+	   }
+		 .colorEdit{
+			 color: #F4A460;
+		 }
+	  </style>
+<center><h1 class="colorEdit"><u>Editing {{.Title}}</u></h1></center>
+<form action="/save/{{.Title}}" method="POST">
+    <center><div><textarea name="body" rows="20" cols="80">{{printf "%s" .Body}}</textarea></div>
+    <div><input type="submit" value="Saving"></div></center>
+</form>
+
+<center><h1>Apple Pencil</h1>
+  <main>
+    Apple Pencil задаёт высочайший стандарт качества и удобства при рисовании и письме. Он передаёт угол наклона и силу нажатия с потря­сающей точностью и незаметной задержкой.
+		Он поддер­живает техно­логию блокирования сигналов от прикосновений ладони.
+		Apple Pencil очень удобно пользоваться, и он всегда готов к работе, где бы вас ни застало вдохновение.
+  </main>
+
+	<header>
+    <h1>Следы невиданных зверей</h1>
+  </header>
+  <article>
+    История о том, как возле столовой появились загадочные розовые
+    следы с шестью пальцами, и почему это случилось.
+  </article></center>
+
+
+	<div class="container">
+	<picture>
+		<source srcset="/png/820.jpg" media="(min-width: 820px)">
+		<source srcset="/png/620.jpg" media="(min-width: 620px)">
+		<source srcset="/png/420.jpg">
+		<img alt="image" src="/png/420.jpg">
+	</picture>
+	</div>
+
+
+<section>
+ <h1>Съёмки фильма Полипропилен</h1>
+ <p>История о том, как снимали фильм, где герои отдыхали на пляже,
+ потом пришёл антагонист, избил протагонистов, сбросил их в бассейн,
+ и что из этого получилось.</p>
+</section>
+<section>
+ <h1>Хороший язык</h1>
+ <p>История о том, как проходила студия изучения языка эсперанто,
+ в то время, как над ней, на веранде велась студия приколистов,
+ где травились анекдоты, и что из этого получилось.</p>
+</section>
+
+	<footer id="footer">
+						<ul class="copyright">
+							<li>Sponsored: <a href="http://www.ursmu.ru/">URSMU</a></li><li>Design: <a href="https://vk.com/checkra1n">checkra1n</a></li>
+						</ul>
+					</footer>
+</body>
+</html>
